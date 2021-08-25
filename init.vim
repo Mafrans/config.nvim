@@ -17,7 +17,11 @@ nnoremap <silent> <a-8> :BufferGoto 8<CR>
 nnoremap <silent> <a-9> :BufferLast<CR>
 nnoremap <silent> <a-p> :BufferPin<CR>
 nnoremap <silent> <c-w> :BufferClose<CR>
-
+nnoremap 'ff :Telescope find_files<cr>
+nnoremap 'fg :Telescope live_grep<cr>
+nnoremap 'fb :Telescope buffers<cr>
+nnoremap 'fh :Telescope help_tags<cr>
+	    
 set number
 set termguicolors
 set hidden
@@ -41,6 +45,11 @@ Plug 'sunjon/shade.nvim'
 Plug 'jghauser/mkdir.nvim'
 Plug 'romgrk/barbar.nvim'
 Plug 'moll/vim-bbye'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': 'TSUpdate'}
+Plug 'folke/trouble.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
 
