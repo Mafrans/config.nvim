@@ -1,4 +1,4 @@
- CONFIGURE PLUGINS
+" CONFIGURE PLUGINS
 lua require('plugins')
 
 inoremap jj <Esc>
