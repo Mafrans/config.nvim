@@ -1,5 +1,5 @@
  CONFIGURE PLUGINS
-"lua require('plugins')
+lua require('plugins')
 
 inoremap jj <Esc>
 nnoremap <c-t> :tabe<CR>
