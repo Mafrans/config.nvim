@@ -94,7 +94,7 @@ function setupLSP (servers)
   local cmpnvimlsp = require('cmp_nvim_lsp');
 
   local capabilities = vim.lsp.protocol.make_client_capabilities()
-  capabilities = cmpnvimlsp.update_capabilities(capabilities)
+  capabilities = cmpnvimlsp.default_capabilities(capabilities)
 
   for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup({ capabilities = capabilities })
