@@ -1,5 +1,6 @@
+local utils = require "utils"
+
 return function()
-    local utils = require "utils"
     local cmp = require "cmp"
     local luasnip = require "luasnip"
 
