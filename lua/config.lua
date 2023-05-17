@@ -5,10 +5,11 @@ local keymap = vim.keymap
 vim.g.mapleader = " "
 
 -- set color scheme
-vim.cmd("colorscheme one")
+vim.cmd("colorscheme dracula")
 
 -- options
-opt.background = "light"
+opt.number = true
+opt.background = "dark"
 opt.autoindent = true
 opt.cursorline = true
 opt.tabstop = 2

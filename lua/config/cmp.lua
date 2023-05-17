@@ -30,11 +30,7 @@ return function()
         cmp.mapping.complete()
     end
 
-    local function insertModeHandleReturn(fallback)
-        cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false })
-    end
-
-    local function commandModeHandleReturn(fallback)
+    local function handleReturn(fallback)
         if (cmp.visible() and cmp.get_selected_entry() ~= nil) then
             cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false })
         else
@@ -51,8 +47,8 @@ return function()
             ["<S-Tab>"] = cmp.mapping(handleShiftTab, { "i", "s" }),
             ["<M-CR>"] = cmp.mapping(handleWinReturn, { "i", "s" }),
             ["<CR>"] = cmp.mapping({
-                i = insertModeHandleReturn,
-                c = commandModeHandleReturn
+                i = handleReturn,
+                c = handleReturn
             }),
         },
         sources = cmp.config.sources({

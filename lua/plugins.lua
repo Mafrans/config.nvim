@@ -31,6 +31,10 @@ lazy.setup({
         "rakr/vim-one",
         lazy = false
     },
+    {
+        "Mofiqul/dracula.nvim",
+	lazy = false
+    },
     { "folke/twilight.nvim" },
     { "norcalli/nvim-colorizer.lua" },
     { "sunjon/shade.nvim" },
